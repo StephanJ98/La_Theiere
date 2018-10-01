@@ -10,7 +10,7 @@ boolean gauche;
 boolean centre;
 boolean droite;
 int cont = 0;
-int taille = 5; //Changer aussi ligne 22
+int taille = 6; //Changer aussi ligne 22
 typedef struct{
   int code;
   String nom;
@@ -21,7 +21,7 @@ typedef struct{
   int grames;
   int temp;
 }thes;
-thes the[5]; //Changer aussi ligne 10
+thes the[6]; //Changer aussi ligne 10
 
 void setup() {
   pinMode(ledvert, OUTPUT);
@@ -98,6 +98,15 @@ void setup() {
   the[4].tipe = "Pu Erh";
   the[4].grames = 6;
   the[4].temp = 95;
+  
+  the[5].code = 5;
+  the[5].nom = "Rooibos";
+  the[5].tic = 240000;  // 4 min
+  the[5].til = 360000;  // 6 min
+  the[5].ti = 300000;   // 5 min
+  the[5].tipe = "Rooibos";
+  the[5].grames = 6;
+  the[5].temp = 95;
 }
 
 void loop() {
